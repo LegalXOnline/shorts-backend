@@ -1,0 +1,21 @@
+# Pinned to the versions this project is tested against.
+# Unpinned dependencies meant no reproducible builds and no protection against
+# a compromised or breaking upstream release.
+# Regenerate with: .venv/bin/pip freeze
+fastapi==0.139.2
+uvicorn[standard]==0.51.0
+requests==2.34.2
+pydantic==2.13.4
+pydantic-settings==2.14.2
+supabase==2.31.0
+groq==1.5.0
+slowapi==0.1.10
+beautifulsoup4==4.15.0
+# Imported by scripts/run_pipeline.py — was missing from this file entirely and
+# only worked because it happened to be installed transitively.
+python-dotenv==1.2.2
+
+# ── Test-only ─────────────────────────────────────────────────────────
+pytest==9.1.1
+anyio==4.14.2
+httpx==0.28.1
